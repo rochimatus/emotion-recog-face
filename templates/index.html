@@ -30,7 +30,7 @@
         var temp;
 
         function update_value() {
-            $.getJSON('http://localhost:5000/chart_data', function(data) {
+            $.getJSON('https://emotion-recognition-py.herokuapp.com/chart_data', function(data) {
                     temp = data.result[0];
                 });
             myChart.data.datasets[0].data = temp;
