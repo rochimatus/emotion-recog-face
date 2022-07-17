@@ -1,8 +1,7 @@
 import cv2
 import numpy as np
-from tensorflow import keras
-from keras.preprocessing import image
-from keras.models import load_model
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import load_model
 model = load_model('./resource/model')
 faceDetect = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 labels=['angry', 'disgust', 'happy', 'fear', 'sad', 'surprise', 'neutral']
