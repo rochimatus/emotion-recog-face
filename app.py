@@ -5,8 +5,6 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-
-
 class PredictionObject:
     image = []
     predict_result = []
@@ -43,4 +41,4 @@ def video():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
-app.run(debug=True)
+app.run()
