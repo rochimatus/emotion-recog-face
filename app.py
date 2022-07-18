@@ -39,6 +39,3 @@ def chart_data():
 def video():
     return Response(gen(Video()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
-
-
-app.run()
